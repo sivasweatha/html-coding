@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body{
+    background-color: bisque;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    color: rgb(32, 36, 35);
+}
+h5{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: rgb(66, 52, 52);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card {
+    justify-content: center;
+    height: 100vh;
+    border: none;
+    background-color: bisque;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 4s;
+    text-align: left;
+}
+.left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 4s;
+    text-align: right;
+}
+.center {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 4s;
+    text-align: center;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
